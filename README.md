@@ -4,5 +4,10 @@ This Ruby script is a simple calculator for adding, subtracting, multipling and 
 Verison 0.1 Script works basically. (16.05.17)
 
 Goals:
+TKP Rechner:
 Short-Term (1.0): Clean up of the code, make it easier to handle and adjust.
 Long-Term (2.0): Implement as a webtool
+
+Transcript:
+Improve transcprition quality (close reading)
+Improve XML highlights (tagging)
