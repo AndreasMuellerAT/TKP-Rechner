@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Rechnung über Inhaftierung und Hinrichtung von Anna Harken</title>
+            <author>unknown</author>
+            <editor>Andreas Müller</editor>
+         </titleStmt>
+         <editionStmt>
+            <p>
+               First Draft, focus on content: meassures, professions, names.
+               <date>Andreas Müller, 15.04.2017</date>
+            </p>
+         </editionStmt>
+         <publicationStmt>
+            <distributor>Andreas Müller</distributor>
+            <availability><p>Free to use</p></availability>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>Part of the trial records of a witchcraft trial agains Hermann Buschorn and his wife Anna Harken, 1654.
+               Located in Stadtarchiv Lemgo. 
+               Tektonik: 01.02.02. A - Rats- und Magistratsgericht - Hexenprozesse. 
+               v.num: 10106.
+               Permalink: http://www.archive.nrw.de/LAV_NRW/jsp/findbuch.jsp?archivNr=292&amp;verzguid=400292000017820000076
+             </bibl>
+            <listPerson>
+               <person xml:id="P01"><persName>Hermann Boseharen</persName></person>
+               <person xml:id="P02"><persName>Anna Harken</persName></person>
+               <person xml:id="P03"><persName>Reinke Luekick</persName></person>
+               <person xml:id="P04"><persName>Joist Hallink</persName></person>
+               <person xml:id="P05"><persName>Herman Niermin</persName></person>
+               <person xml:id="P06"><persName>M. Dauit</persName></person>
+               <person xml:id="P07"><persName>Joist Seribbe</persName></person>
+            </listPerson>
+            <listPlace>
+               <place xml:id="L01"><placeName>auf der Wage</placeName></place>
+            </listPlace>
+         </sourceDesc>
+      </fileDesc>
+     <encodingDesc>
+        <projectDesc>
+           <p>The aim of the edition was to provide a basic transcription of the texts and numbers.
+              As the basic reserarch interest is in the distribution of costs of the trial most attention has been attributed to the salaries, professions and names.
+              All personal Names (persName), all Professions (name type="profession"), all places (placeName), all Dates (date) and all amounts of money (measure) have been taged.
+              The edition has avoided deeper (miss)interpretation and focused on a clear transkription. The reproduction of the content received priority over the recreation of the original layout.
+              The three rows indicating the value of in Thl-Gl-D have been largely discarded and replaced by appropriate and standardized tagging.
+           </p>
+        </projectDesc>
+        <samplingDecl>
+           <p>
+              As the sallaries and costs are the main interest, a standardized way of noting them has been chosen.
+              For example the tanscription 4,7,3, indicates the values in the colums of the table.
+              The tag measure has therefore been specified with the unit "th-gl-d" it's quantity follows the same scheme "04073".
+              Here, the first two integers corresponds to Taler (thl), the second two integers to Groschen (gl) and the last one to Pfennig (d).
+              The exchange rate is: 1 Taler = 36 Groschen = 216 Pfennige
+           </p>
+        </samplingDecl>
+        <editorialDecl>
+           <p>
+              The edition follows the notation of the original document. Abreviations on the end of words have been solved.
+              Words or letters that could not be identified have been replaced by "..." wheres each dot represents a letter.
+              Uncertain reading has been marked with cert=low.
+           </p>
+        </editorialDecl>
+     </encodingDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div n="119r">
+            <p>
+               Den <date when="1654-08-17">17. Augusti Anno 1654</date> ist <persName role="accused" ref="#P02"><persName ref="#P01">Hermann
+                  Boseharens</persName> Hausfrauv Anna Harken</persName>, ihrer
+               Zauberey inhaftiert <date when="1654-08-25">und den 25. Dieses</date> mit dem
+               Schwert hingerichtet und begraben worden <hi rend="underline"><abbr type="currency">Thlo Gl D</abbr></hi>  
+            </p>
+            <p>
+                 <!--Ausgezeichnet werden: Alle Namen (persName = role) oder Berufsbezeichnungen (name type=profession), alle Orte, Datumsangaben, Geldbeträge-->
+               <list>
+                  <item>Den <name type="profession">kleinen Dienern</name> Vor den Angricht <measure type="currency" unit="th-gl-d" quantity="00100">,10,</measure></item>
+                  <item><persName role="guarding" ref="#P03">Reinke Luekick</persName> und <persName role="guarding" ref="#P04">Joist Hallink</persName> 8 nechte
+                     bey ihr gewachet geben <measure type="currency" unit="th-gl-d" quantity="03200">3,20,</measure></item>
+                  <item><persName role="hosting" ref="#P05">Herman Niermin</persName> das ehr dieselbe 8 tange
+                     gespeiset Jeden Tags <measure type="currency" unit="gl" quantity="6">6 gl</measure> wehrt <measure type="currency" unit="th-gl-d" quantity="01120">1,12,</measure></item>
+                  <item>Das Gericht anzukündigen <measure type="currency" unit="th-gl-d" quantity="00030">,3,</measure></item>
+                  <item>Beiden <name type="profession">Beysitzern</name> ,12,</item>
+                  <item>Dem <name type="profession">Richter</name> <measure type="currency" unit="th-gl-d" quantity="00180">,18,</measure></item>
+                  <item>Dem <name type="profession">Gerichts fronen</name> <measure type="currency" unit="th-gl-d" quantity="00043">,4,3</measure></item>
+                  <item>Dem <name type="profession">Ampts Ankleger</name> <measure type="currency" unit="th-gl-d" quantity="00160">,16,</measure></item>
+                  <item>Dem <name type="profession">Deferhori</name> <measure type="currency" unit="th-gl-d" quantity="00160">,16,</measure></item>
+                  <item>Den <name type="profession">Amhtsleuten</name> <measure type="currency" unit="th-gl-d" quantity="00180">,18,</measure></item>
+                  <item>Dem <hi rend="strikethrough">..........</hi> <corr><name type="profession">fiscati</name></corr> <measure type="currency" unit="th-gl-d" quantity="00050">5</measure>,,</item>
+                  <item cert="low">Dem <name type="profession">Toreturio</name> <measure type="currency" unit="th-gl-d" quantity="02000">2,,</measure></item>
+                  <item>Der <name type="otherRole">Verordneten</name> Zur Juhtition <measure type="currency" unit="th-gl-d" quantity="10000">10,,</measure></item>
+                  <item>Den <name type="profession">Grosen Dienern</name> vor ihr Auffvarten <measure type="currency" unit="th-gl-d" quantity="01000">1,,</measure></item>
+                  <item>Den <name type="profession">Kleinen Dienern</name> vor Gericht zu Examen <measure type="currency" unit="th-gl-d" quantity="01000">1,,</measure></item>
+                  <item>Vor Amp Bier und was <persName ref="#P06">M Dauits</persName> <name type="profession">Knecht</name> geset <measure type="currency" unit="th-gl-d" quantity="01190">1,19,</measure></item>
+                  <item>Minder Bier und was <persName ref="#P06">M Dauidt</persName> holn lassen
+                     auch was die <name type="profession">Beysitzer</name> und <name type="profession">Cemmer</name> <placeName ref="#L01">auff der
+                     Wage</placeName> Verumsitzet in alles <measure type="currency" unit="th-gl-d" quantity="04073">4,7,3</measure></item>
+                  <item><hi rend="underline">Vor Lichter und Trane <measure type="currency" unit="th-gl-d" quantity="00180">,18,</measure></hi></item>
+               </list>
+               Latris <measure type="currency" unit="th-gl-d" quantity="32300">32,<hi rend="strikethrough">15</hi> <corr>30</corr>,</measure>               
+            </p>
+         </div>
+         <div n="119v">
+            <p>
+               <hi rend="underline"><abbr type="currency">Thlo Gl D</abbr></hi>
+              <list>
+                 <item><persName ref="#P06">M Dauits</persName> gebuhr <measure type="currency" unit="th-gl-d" quantity="05000">5,,</measure></item>
+                 <item>Dessen <name type="profession">Diner</name> vor die Kuhlen Zumachen
+                    und Zubegraben <measure type="currency" unit="th-gl-d" quantity="01000">1,,</measure></item>
+                 <item> Vor ein Sarg geben <measure type="currency" unit="th-gl-d" quantity="01000">1,,</measure></item>
+                 <item>   Vor Salben welche <persName ref="#P06">M Dauidt</persName> zu dieser
+                    Verbraucht <measure type="currency" unit="th-gl-d" quantity="02000">2,,</measure></item>
+                 <item><persName role="transporting" ref="#P07">Joist Seribbe</persName> dieselben auszufuhren <measure type="currency" unit="th-gl-d" quantity="00120">,12,</measure></item>
+                 <item>Von dieser Zerhung <measure type="currency" unit="th-gl-d" quantity="00120">,12,</measure></item>
+                <item> <hi rend="underline">Vernkost <measure type="currency" unit="th-gl-d" quantity="00180">,18,</measure></hi></item>
+               </list>
+               Latris <measure type="currency" unit="th-gl-d" quantity="10060">10,6,</measure>
+               Vorstehen <hi rend="underline"><measure type="currency" unit="th-gl-d" quantity="32300"><corr>32,30,</corr></measure></hi>
+               Somma <measure type="currency" unit="th-gl-d" quantity="43000"><corr>43</corr><hi rend="strikethrough">..</hi>,,</measure>
+            </p>
+         </div>
+         <div n="120r">
+            <p>
+               <hi rend="underline"><abbr type="currency">Thlo Gl D</abbr></hi>
+               <list>
+                  <item>Hiraus Empfangen an Gelde und was
+                     Aus den Mobilien Gelöset <measure type="currency" unit="th-gl-d" quantity="43000">40,4,</measure></item>
+               </list>
+            </p>
+         </div>
+      </body>
+  </text>
+</TEI>
